@@ -1,0 +1,7 @@
+.categoria{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    cursor: pointer;
+    align-items: center ;
+  }
