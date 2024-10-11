@@ -1,10 +1,12 @@
+import CardRecomenda from '../CardRecomenda'
 import { Livros } from '../Livros'
+import { Titulo } from '../Titulo'
 import {livros} from './dadosUltimosLancamentos'
-
+import imagemLivro from '../../images/livro.png'
 export default function UltimosLancamentos(){
     return (
         <section>
-            <h2>Últimos Lançamentos</h2>
+            <Titulo cor="#1AB">Últimos Lançamentos</Titulo>
             <Livros>
                 {
                     livros.map(
@@ -19,6 +21,7 @@ export default function UltimosLancamentos(){
                     )
                 }
             </Livros>
+            <CardRecomenda titulo="Talvez você se interesse..." subtitulo="Angular 11" descricao="Livro sobre Angular" img={imagemLivro}/>
         </section>
     )
 }
